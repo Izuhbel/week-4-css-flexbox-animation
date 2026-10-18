@@ -1,0 +1,94 @@
+
+/* General Page Styling */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6fb;
+  margin: 0;
+  padding: 40px 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #1e293b;
+  margin-bottom: 40px;
+}
+
+/* Pricing Container */
+
+.pricing-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Shared Pricing Card Styles */
+
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 0 0 200px;
+  width: 100%;
+  min-height: 220px;
+  padding: 30px;
+  border: 2px solid #7861ff;
+  border-radius: 12px;
+  background-color: white;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Basic Plan */
+
+.basic-plan {
+  order: 0;
+  background-color: #ede9fe;
+}
+
+/* Pro Plan */
+
+.pro-plan {
+  order: 1;
+  flex-grow: 2;
+  background-color: #c4b5fd;
+}
+
+/* Premium Plan */
+
+.premium-plan {
+  order: 2;
+  background-color: #ddd6fe;
+}
+
+/* Card Typography */
+
+.pricing-card h2 {
+  font-size: 24px;
+  color: #1e293b;
+  margin: 0;
+}
+
+.pricing-card p {
+  font-size: 22px;
+  font-weight: bold;
+  color: #2563eb;
+  margin: 20px 0 0;
+}
+
+/* Card Hover Effect */
+
+.pricing-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
+}
